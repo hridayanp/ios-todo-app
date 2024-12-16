@@ -28,6 +28,8 @@ class TodoListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
         let item =  itemArray[indexPath.row]
         
+        print(item)
+        
         cell.textLabel?.text = item.title
         
         cell.accessoryType = item.done ? .checkmark : .none
